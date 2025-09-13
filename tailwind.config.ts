@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        learning: {
+          primary: "hsl(var(--learning-primary))",
+          "primary-hover": "hsl(var(--learning-primary-hover))",
+          secondary: "hsl(var(--learning-secondary))",
+          "secondary-hover": "hsl(var(--learning-secondary-hover))",
+          purple: "hsl(var(--learning-purple))",
+          "purple-hover": "hsl(var(--learning-purple-hover))",
+          pink: "hsl(var(--learning-pink))",
+          "pink-hover": "hsl(var(--learning-pink-hover))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +67,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-secondary": "var(--gradient-secondary)",
+        "gradient-accent": "var(--gradient-accent)",
+        "gradient-success": "var(--gradient-success)",
       },
       borderRadius: {
         lg: "var(--radius)",
