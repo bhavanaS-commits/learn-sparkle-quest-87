@@ -56,6 +56,9 @@ export default {
           "purple-hover": "hsl(var(--learning-purple-hover))",
           pink: "hsl(var(--learning-pink))",
           "pink-hover": "hsl(var(--learning-pink-hover))",
+          orange: "hsl(var(--learning-orange))",
+          yellow: "hsl(var(--learning-yellow))",
+          teal: "hsl(var(--learning-teal))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -73,6 +76,7 @@ export default {
         "gradient-secondary": "var(--gradient-secondary)",
         "gradient-accent": "var(--gradient-accent)",
         "gradient-success": "var(--gradient-success)",
+        "gradient-rainbow": "var(--gradient-rainbow)",
       },
       borderRadius: {
         lg: "var(--radius)",

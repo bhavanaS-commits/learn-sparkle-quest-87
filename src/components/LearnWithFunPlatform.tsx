@@ -22,9 +22,9 @@ const LearnWithFunPlatform = () => {
   return (
     <div className="flex h-screen bg-background">
       {/* Sidebar */}
-      <div className="w-64 bg-sidebar-background border-r border-sidebar-border">
+      <div className="w-64 bg-sidebar border-r border-sidebar-border">
         <div className="p-6">
-          <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-rainbow bg-clip-text text-transparent">
             LearnFun
           </h1>
         </div>
@@ -37,8 +37,8 @@ const LearnWithFunPlatform = () => {
                 variant={activeTab === item.id ? "secondary" : "ghost"}
                 className={`w-full justify-start text-left ${
                   activeTab === item.id 
-                    ? "bg-gradient-primary text-white" 
-                    : "text-sidebar-foreground hover:bg-sidebar-accent"
+                    ? "bg-gradient-rainbow text-white shadow-lg" 
+                    : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
                 }`}
                 onClick={() => setActiveTab(item.id)}
               >
@@ -49,11 +49,11 @@ const LearnWithFunPlatform = () => {
           })}
         </nav>
         <div className="absolute bottom-4 left-4 right-4">
-          <div className="flex items-center space-x-3 bg-sidebar-accent p-3 rounded-lg">
+          <div className="flex items-center space-x-3 bg-gradient-accent p-3 rounded-lg">
             <Button
               variant="ghost"
               size="sm"
-              className="bg-gradient-primary hover:bg-gradient-success text-white p-2 rounded-full h-10 w-10"
+              className="bg-gradient-rainbow hover:bg-gradient-success text-white p-2 rounded-full h-10 w-10 shadow-lg"
             >
               <span className="text-xl">{userAvatar}</span>
             </Button>
@@ -64,11 +64,11 @@ const LearnWithFunPlatform = () => {
       {/* Main Content */}
       <div className="flex-1 space-y-4 p-8 pt-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-3xl font-bold tracking-tight capitalize bg-gradient-secondary bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold tracking-tight capitalize bg-gradient-rainbow bg-clip-text text-transparent">
             {activeTab.replace('-', ' ')}
           </h2>
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-accent p-2 rounded-full">
+            <div className="bg-gradient-accent p-2 rounded-full shadow-lg">
               <Users className="h-5 w-5 text-white" />
             </div>
             <span className="text-sm font-medium text-learning-purple">Level 5 Explorer</span>

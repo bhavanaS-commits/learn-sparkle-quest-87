@@ -49,12 +49,12 @@ export const Dashboard = () => {
         {stats.map((stat, index) => {
           const Icon = stat.icon;
           return (
-            <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
+            <Card key={index} className="border-border/50 bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium text-muted-foreground">
                   {stat.title}
                 </CardTitle>
-                <div className={`${stat.gradient} p-2 rounded-md`}>
+                <div className={`${stat.gradient} p-2 rounded-md shadow-md`}>
                   <Icon className="h-4 w-4 text-white" />
                 </div>
               </CardHeader>
@@ -77,9 +77,9 @@ export const Dashboard = () => {
       </div>
 
       {/* Recent Activity */}
-      <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+      <Card className="border-border/50 bg-card/80 backdrop-blur-sm shadow-lg">
         <CardHeader>
-          <CardTitle className="bg-gradient-secondary bg-clip-text text-transparent">
+          <CardTitle className="bg-gradient-rainbow bg-clip-text text-transparent">
             Recent Learning Activity
           </CardTitle>
         </CardHeader>
